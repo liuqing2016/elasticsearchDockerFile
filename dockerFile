@@ -1,0 +1,6 @@
+from docker.elastic.co/elasticsearch/elasticsearch:7.4.2
+
+#update system timezone
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+#update application timezone
+RUN echo "Asia/Shanghai" >> /etc/timezone
